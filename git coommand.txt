@@ -1,0 +1,17 @@
+1. $ git config --global user.name "prathmesh0125"
+2. $ git config --global user.email "bidveprathmesh590@gmail.com"
+3. $ touch .gitignore
+4. $ git add .
+5. $ git init
+6. $ git commit -m "Initial commit "
+7. $ git status //just cjheck status
+only for one time
+{
+//genrating ssh key for your github repositories
+8.$ ssh-keygen -t rsa -b 4096 -c "bidveprathmesh590@gmail.com" 
+8.1 add this key in your github account
+9. $ git remote add origin <ssh url.git>
+}
+
+8. $ git remote add origin git@github.com:prathmesh0125/My-Portfolio.git
+9. $ git push origin master
