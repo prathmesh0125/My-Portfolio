@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background:url(her); */
+}
+
+/* .name {
+  background-color: black;
+} */
+/* body{
+    display: flex;
+    justify-content: center;
+
+} */
+
+
+.mainprofile{
+  position: relative;
+  
+  height: 83vh;
+  margin-top: -11px;
+  background: url("/bg2.jpg") no-repeat center; 
+  background-size: cover; 
+}
+h1 {
+  position: relative;
+  margin: -2px 89px 29px;
+  font-size: 31px;
+  font-weight: 900;
+  margin-top: 11px;
+  /* padding: 78px; */
+  color: #fff;
+  padding-top: 8rem;
+  z-index: 1;
+}
+/* h1::before {
+  content: "";
+  position: absolute;
+  left: 110%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, blur 5%, blur 100%);
+
+  animation: animate 9s infinite forwards;
+  animation-delay: 3s;
+}  
+
+  @keyframes animate {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: -10%;
+  }
+} */
+
+h1 span {
+  color: red;
+}
+
+video {
+  position: absolute;
+  margin-left: 23px;
+  margin-top: -5%;
+  filter: drop-shadow(4px 11px 6px black);
+  width: 25%;
+  height: 8%;
+  object-fit: cover;
+  z-index: 14;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.homecontainer {
+  background-color: white;
+  padding-top: 4vmax;
+  border-radius: 0 0 200px 200px;
+  border-bottom: 200px solid white;
+  position: relative;
+  margin-left: -35px;
+  z-index: 1;
+}
+.homecontainer > h3 {
+  text-align: center;
+  color: rgba(22, 20, 0, 0.904);
+  padding: 4vmax;
+}
+.typewriter{
+  margin-left: 6rem;
+
+  font-size: 19px;
+}
+.homeskill {
+  transform: translateY(-200px);
+  background-color: hsl(219, 48%, 8%);
+  height: 1500px;
+  position: relative;
+  margin-bottom: -200px;
+  padding: 200px;
+  box-sizing: border-box;
+  perspective: 450px;
+  display: flex;
+  margin-left: -35px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.homeskill > h4 {
+  margin-top: 11rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.codingProfile {
+  background-color: white;
+  padding-top: 4vmax;
+  transform: translateY(-180px);
+  border-radius: 18% 18% 0 0;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 400px;
+  margin-right: 20px;
+  margin-left: -3%;
+  text-align: center;
+  margin-top: 3%;
+  width: 103%;
+  /* background-color: #8bc6ec; */
+  /* background-image: linear-gradient(228deg, #5e0303 0%, #0f2c66f7 100%); */
+}
+.codingProfile > h4 {
+  color: black;
+
+  /* margin-top: 10%; */
+}
+
+.sociallink{
+  margin-left: 6rem;
+
+  display: flex;
+  color: white;
+  padding-top: 24px;
+  line-height: 2.4rem;
+  width: 214px;
+  justify-content: space-between;
+}
+.sociallink >a:nth-child(2){
+  color: red;
+}
+.sociallink >a:nth-child(3){
+  color: rgba(238 0 141);
+}
+.contact a{
+  background-color: white;
+  color: black;
+  padding: 5px;
+  width: 120px;
+  text-decoration: none;
+  display: block;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  text-align:center ;
+  border: 1px solid #ffffff;
+  transition: all 0.5s;
+  /* transform: translateX(-100%) translateZ(0px); */
+}
+/* .contact a{
+  text-decoration: none;
+  color: black;
+} */
+.contact a:hover
+{
+  /* transform: translateX(-100%) translateZ(0px); */
+    background-color: unset;
+    color: white;
+}
+/* .contact a:hover{
+  color: antiquewhite;
+  
+} */
+@media screen and (max-width: 420px) {
+  video {
+    position: absolute;
+    margin-left: -19px !important;
+    margin-top: -26% !important;
+    filter: drop-shadow(4px 11px 6px black);
+    width: 81% !important;
+    height: 20%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+  h1 {
+    margin-top: 4px !important;
+    font-size: 25px;
+    margin-left: 31px;
+    padding-top: 6rem;
+  }
+  .typewriter {
+    margin-top: -5% !important;
+    margin-left: 2rem !important;
+  }
+  .codingProfile {
+    margin-top: 10%;
+  }
+  .sociallink{
+    margin-left: 2rem;
+  }
+  .contact{
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 420px) and (max-width: 1300px) {
+  video {
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 3%;
+    filter: drop-shadow(4px 11px 6px black);
+    width: 33%;
+    height: 5%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: screen;
+  }
+  h1 {
+    margin-top: 8px !important;
+    font-size: 25px;
+    margin-left: 6rem;
+    padding-top: 8rem;
+  }
+  .typewriter {
+    margin-top: -1% !important;
+  }
+}
+@media (min-width: 430px) and (max-width: 1000px) {
+  video{
+    display: none !important;
+  }
+}
+

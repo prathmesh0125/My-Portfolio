@@ -1,0 +1,8 @@
+setup for Portfolio project:
+
+1.install react:-npx create-react-app frontend
+2.install router dom ,threeejs library and axios overlay-navbar And reduxjs Toolkit setup
+:-npm i react-router-dom three axios overlay-navbar @reduxjs/toolkit
+
+3.install react icons and mui icons:-npm i  @mui/icons-material react-icons
+4.install react redux:-npm i react-redux

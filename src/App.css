@@ -1,0 +1,19 @@
+* {
+  cursor: url("/cursor.png"),auto;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  /* background-size: cover; */
+  /* filter: grayscale(100); */
+  /* background: url("herobg.png") no-repeat center; */
+  /* z-index: -3; */
+}
+.back{
+  /* background-size: cover;
+  /* filter: grayscale(100); */
+  /* background: url("../bg2.jpg") no-repeat center;
+  background-size: cover;  */
+
+  /* z-index: -3; */
+}
+
