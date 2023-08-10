@@ -91,7 +91,7 @@ function Home() {
         </div>
       </section>
       <section>
-        <ComputersCanvas/>
+        {/* <ComputersCanvas/> */}
         </section>
       </div>
 

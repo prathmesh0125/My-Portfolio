@@ -1,0 +1,156 @@
+.Projects{
+    background-color: hsl(219,48%,8%);
+    min-height: 100vh;
+    padding-top: 15vmax;
+}
+.Projects>h3{
+    text-align: center;
+    color: rgb(255,255,255);
+    position: absolute;
+    /* background-color: hsl(250,100%,75%); */
+    background-color: red;
+    padding: 2vmax 4vmax ;
+    display: flex;
+    border-radius: 100px;
+    align-items: center;
+    left :50%;
+    transform: translate(-50%,-100vh);
+    animation: ProjectHeading 1s ease-in-out forwards;
+
+}
+
+@keyframes ProjectHeading {
+    to{
+        transform: translate(-50%,-50%);
+    }
+}
+.Projects>h3>svg{
+    margin: 1vmax;
+}
+.ProjectWrapper{
+    border-top: 100px solid white;
+    border-radius: 250px 250px 0 0;
+    min-height: inherit;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5vmax;
+    padding-bottom: 10vmax;
+    overflow-x: hidden;
+
+}
+.Projectcard{
+    width: 80%;
+    text-decoration: none;
+    color: rgba(0,0,0,0.712);
+    margin: 2vmax;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-100vw);
+    animation: Projectcard 1s ease-in-out forwards 0.5s;
+    border-bottom: 1px solid black;
+
+    /* flex-wrap: wrap; */
+}
+.Projectcard img{
+    /* width: 300px ;
+    height: 200px; */
+    width: inherit;
+}
+.Projectcard:nth-child(even){
+    transform: translateX(100vw);
+    flex-direction: row-reverse;
+    animation: Projectcard 1s ease-in-out forwards 1s;
+
+}
+
+@keyframes Projectcard {
+    to{
+        transform: translateX(0);
+    }
+}
+
+.Projectcard div{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
+    justify-content: space-around;
+
+
+}
+.Projectcard div:first-child::after{
+    content: "view Demo";
+    width: 100%;
+    height: 10%;
+    font: 100 2rem "Roboto";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    background-color: hsl(250, 100%, 75%);
+    color: white;
+
+}
+.Projectcard div:first-child>h5{
+    text-align: center;
+    padding: 2vmax;
+}
+.Projectcard div:last-child{
+padding: 3vmax;
+}
+.Projectcard div:last-child>p{
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  text-align: right;
+}
+.Projectcard div:last-child>h4{
+    text-align: center;
+    /* padding: 2vmax; */
+}
+.Projectcard div:last-child>h6{
+    font-family:"Ubuntu Mono";
+    font-weight: bold;
+    color: black;
+}
+.Projectcard div:first-child:hover{
+    /* filter: blur(4px); */
+    filter: hue-rotate(360deg)  ;
+}
+@media screen and (max-width:600px){
+    .Projectcard{
+        flex-direction: column;
+    }
+    .Projectcard div{
+        justify-content: center;
+    }
+    .Projectcard div:last-child p{
+        text-align: center;
+    }
+    .Projectcard:nth-child(even){
+        flex-direction: column;
+    
+    }
+    .ProjectWrapper{
+        border-radius: 100px 100px 0 0;
+        transition:all 0.5s;
+
+    }
+    
+    
+}
+@media screen and (min-width:601px) and (max-width:800px){
+    .ProjectWrapper{
+        border-radius: 150px 150px 0 0;
+        transition:all 0.5s;
+    }
+    .Projectcard div:last-child>h6{
+        font-size: 14px;
+    }
+}

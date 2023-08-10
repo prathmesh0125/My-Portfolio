@@ -2,9 +2,10 @@ import React from "react";
 import "../Styles/Project.css";
 import { Button, Typography } from "@mui/material";
 import { AiOutlineProject } from "react-icons/ai";
+import { FaRegSmileWink } from "react-icons/fa";
 import { Delete } from "@mui/icons-material";
 
-const projectCard=({
+const ProjectCard=({
   url,
   projectImg,
   Projecttitle,
@@ -51,17 +52,21 @@ const Project = () => {
       </Typography>
       <div className="ProjectWrapper">
        {
-        Projects.map((project,index)=>{
-          <projectCard  
+        Projects.map((project,index)=>(
+          <ProjectCard  key="index"
           url="https://github.com/prathmesh0125"
           projectImg="Project/Barebeat.png"
           Projecttitle="BareBeat"
           description="djfhfsjd dsjsdnfjsdsmd ssdnsdnjsd"
           tecnologies="Reactjs,NodeJs,Html,Css,Javascript"
           />
-        })
+      ))
        }
       </div>
+      <Typography variant="h3" style={{backgroundColor:"#0c526b",font:"100 1.2rem 'Ubuntu Mono' "}}>
+        All The above Projects are made by Me <FaRegSmileWink/> 
+        
+      </Typography>
     </div>
   );
 };
