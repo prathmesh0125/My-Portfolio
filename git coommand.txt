@@ -1,8 +1,8 @@
 1. $ git config --global user.name "prathmesh0125"
 2. $ git config --global user.email "bidveprathmesh590@gmail.com"
 3. $ touch .gitignore
-4. $ git add .
-5. $ git init
+4. $ git init
+5. $ git add .
 6. $ git commit -m "Initial commit "
 7. $ git status //just cjheck status
 only for one time

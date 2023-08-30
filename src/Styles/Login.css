@@ -16,6 +16,17 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  transform: translateX(8%) translateY(-1%);
+    animation: logincontainer 0.5s linear forwards;
+}
+@keyframes logincontainer {
+  from{
+      transform: translateX(-100%) translateY(-50%) rotateZ(-360deg) ;
+  }
+  to{
+       transform: translateX(8%) translateY(-1%);
+
+  }
 }
 .login form {
   position: relative;
@@ -25,6 +36,15 @@
   font-size: 2em;
   margin-bottom: 30px;
   line-height: 0.9em;
+  transform: translatex(-100vw);
+
+  animation: Title 1s ease-in-out forwards 1.5s
+}
+
+@keyframes Title {
+  to{
+    transform: translateX(0);
+  }
 }
 .login form h2 span {
   font-weight: 300px;
@@ -48,31 +68,65 @@
   padding-left: 40px;
   margin-bottom: 20px;
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px white;
+  transform: translateY(-100vh);
+
+  animation: textBtn 1s ease-in-out forwards 1.5s;
+}
+
+@keyframes textBtn {
+  to{
+    transform: translateY(0);
+}
 }
 .login form .inpuBox i{
     position: absolute;
     left: 20px;
     top: 25%;
+    transform: translateY(-100vh);
+
+  animation: textBtn 1s ease-in-out forwards 1.5s;
 }
 .login form label {
     display: flex;
     align-items: center;
+    transform: translateX(100vw);
+    animation: textBtn 1s ease-in-out forwards 1.5s;
 }
 .login form  input[type="checkbox"]{
     margin-right: 5px;
+    transform: translateX(100vw);
+  animation: textBtn 1s ease-in-out forwards 1.5s;
+
 }
 .login form .inpuBox input[type="submit"]{
     width: 100%;
     padding: 15px 20px;
     margin-top: 20px;
     cursor: pointer;
-    /* margin-bottom: 20px; */
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px white;  
+    margin-bottom: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1) ;  
+    /* inset -5px -5px 10px white */
     font-weight: 600;
+    transform: translateY(200vh);
+
+    animation: FormBtn 1s ease-in-out forwards 1.5s;
+
 }
+@keyframes FormBtn {
+  to{
+      transform: translateY(0);
+  }
+}
+
 .login form .inpuBox input[type="submit"]:hover{
-    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3), inset -5px -5px 10px white;
+  /* box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3), inset -5px -5px 10px white; */
+  color: white;
+  transition: 0.5s;
+  background-color: hsl(219, 48%, 8%);
 }
+/* .inpuBox:hover{
+  background-color: #03a9f4;
+} */
 .login .finger{
     display: flex;
     justify-content: center;
@@ -98,6 +152,9 @@
     /* filter: invert(1); */
     animation: animate 3.5s linear infinite;
 }
+
+
+
 @keyframes animate {
     0%{
         opacity: 1;

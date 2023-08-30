@@ -6,6 +6,7 @@ import Login from "./Components/Login";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Project from "./Components/Project";
+import Contact from "./Components/Contact";
 function App() {
   return (
     <div className="back">
@@ -14,8 +15,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Project" element={<Project />} />
-          <Route path="/Contact" element={<Login />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/account" element={< Login/>} />
         </Routes>
         <Footer />
       </Router>
